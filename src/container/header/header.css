@@ -1,27 +1,30 @@
 .gpt3__header {
     display: flex;
+    padding: 2rem 4rem;
 }
 
 .gpt3__header-content {
     flex: 1;
     display: flex;
-    align-items: flex-start;
     justify-content: center;
+    align-items: flex-start;
     flex-direction: column;
+
     margin-right: 5rem;
 }
 
 .gpt3__header-content h1 {
     font-family: var(--font-family);
     font-weight: 800;
-    font-size: 62px;
-    line-height: 75px;
+    /* font-size: 62px;
+    line-height: 75px; */
+    font-size: 28px;
+    line-height: 40px;
     letter-spacing: -0.04em;
 }
 
 .gpt3__header-content p {
     font-family: var(--font-family);
-    font-family: manrope;
     font-style: normal;
     font-weight: normal;
     font-size: 20px;
@@ -39,14 +42,14 @@
 }
 
 .gpt3__header-content_input input {
-    flex: 1;
+    flex: 2;
     width: 100%;
     min-height: 50px;
     font-family: var(--font-family);
     font-size: 20px;
-    line-height: 27px;
+    line-height: 28px;
     background: var(--color-footer);
-    border: 2px solid var(--color-foter);
+    border: 2px solid var(--color-footer);
     padding: 0 1rem;
     outline: none;
     color: #fff;
@@ -63,9 +66,9 @@
 
     background: #FF4820;
     font-family: var(--font-family);
-    font-weight: bold;
+    font-weight: 400;
     font-size: 20px;
-    line-height: 27px;
+    line-height: 28px;
     color: #fff;
     cursor: pointer;
     outline: none;
@@ -126,13 +129,15 @@
 @media screen and (max-width: 650px) {
     .gpt3__header h1 {
         font-size: 48px;
-    }
-
-    .gpt3__header-content h1 {
-        margin: 0 0 3rem;
         line-height: 60px;
     }
+
     .gpt3__header-content p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .gpt3__header p {
         font-size: 16px;
         line-height: 24px;
     }
@@ -151,4 +156,24 @@
     }
     
 }
+
+@media screen and (max-width: 490px) {
+    .gpt3__header h1 {
+        font-size: 36px;
+        line-height: 48px;
+    }
+
+    .gpt3__header p {
+        font-size: 14px;
+        line-height: 24px;
+    }
+    .gpt3__header-content_input input,
+    .gpt3__header-content_input button
+    {
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+}
+
 
