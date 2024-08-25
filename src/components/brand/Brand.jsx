@@ -1,7 +1,7 @@
 import React from 'react';
 import './Brand.css';
 import {google, slack, atlassian, dropbox, shopify} from './imports';
-import { CgSlack } from 'react-icons/cg';
+// import { CgSlack } from 'react-icons/cg';
 const Brand = () => {
   return (
     <div className='gpt3__brand section__padding'>
